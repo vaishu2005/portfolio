@@ -138,28 +138,38 @@ h2 {
 /* card design */
 .about-card {
   background: #ffffff;
-  padding: 25px;
-  width: 220px;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* subtle hover only */
-.about-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  padding: 28px 22px;
+  width: 230px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
 }
 
 .about-card span {
-  font-size: 28px;
-  display: block;
-  margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 12px;
+  display: inline-block;
+  color: var(--primary);
 }
 
 .about-card h4 {
+  font-size: 16px;
   margin-bottom: 6px;
+  font-weight: 600;
 }
+
+.about-card p {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-color: var(--primary-light);
+}
+
 
 /* ===== SKILLS ===== */
 .skills-container {
@@ -169,17 +179,24 @@ h2 {
 }
 
 .card {
-  padding: 20px 30px;
+  padding: 12px 22px;
   background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
+  border-radius: 30px;
+  border: 1px solid #e5e7eb;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-dark);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
 }
-
 
 .card:hover {
-  transform: scale(1.1);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(79,70,229,0.15);
 }
+
 /* ===== HOBBIES SECTION ===== */
 #hobbies {
   background: var(--bg-section);
@@ -295,6 +312,7 @@ h2 {
 header nav a:hover {
   color: var(--primary);
 }
+
 
 
 
