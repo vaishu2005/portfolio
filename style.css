@@ -1,4 +1,236 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; } body { scroll-behavior: smooth; } /* ===== HEADER ===== */ header { position: sticky; top: 0; background: #ffffff; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000; } header nav a { margin-left: 20px; text-decoration: none; color: #333; font-weight: bold; } header nav a:hover { color: #549ce9; } /* ===== HERO ===== */ .hero { height: 90vh; background: linear-gradient(120deg, #6a11cb, #d0f16b); color: white; display: flex; align-items: center; justify-content: center; } .hero-content { display: flex; align-items: center; gap: 60px; flex-wrap: wrap; } .hero-text h1 { font-size: 40px; margin-bottom: 10px; } .hero-text p { font-size: 18px; } .hero-image img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 4px solid white; } .animate { animation: fadeUp 1s ease forwards; } .delay { animation-delay: 0.5s; } @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } } /* ===== SECTIONS ===== */ section { padding: 60px 80px; } h2 { text-align: center; margin-bottom: 40px; } .about-wrapper { max-width: 900px; margin: auto; text-align: center; } .about-text { font-size: 16px; color: #444; line-height: 1.7; margin-bottom: 40px; } /* cards layout */ .about-cards { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; } /* card design */ .about-card { background: hsl(179, 73%, 75%);; padding: 25px; width: 220px; border-radius: 14px; transition: transform 0.3s ease, box-shadow 0.3s ease; } /* subtle hover only */ .about-card:hover { transform: translateY(-6px); box-shadow: 0 10px 25px rgba(0,0,0,0.12); } .about-card span { font-size: 28px; display: block; margin-bottom: 10px; } .about-card h4 { margin-bottom: 6px; } /* ===== SKILLS ===== */ .skills-container { display: flex; justify-content: center; gap: 20px; } .card { padding: 20px 30px; background: hsl(179, 73%, 75%); border-radius: 10px; transition: transform 0.3s; } .card:hover { transform: scale(1.1); } /* ===== HOBBIES SECTION ===== */ #hobbies { padding: 60px 20px; background: #0b0f19; text-align: center; } #hobbies h2 { font-size: 32px; margin-bottom: 40px; color: #ffffff; } .hobbies-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 25px; } .hobby-card { background: #111827; border-radius: 12px; padding: 25px; width: 220px; transition: transform 0.3s ease, box-shadow 0.3s ease; } .hobby-card span { font-size: 32px; display: block; margin-bottom: 10px; } .hobby-card h4 { margin-bottom: 10px; color: #ffffff; } .hobby-card p { font-size: 14px; color: #cbd5e1; } .hobby-card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.4); } /* ===== GALLERY ===== */ .gallery-container { display: flex; justify-content: center; gap: 20px; } .gallery-container img { width: 250px; border-radius: 10px; transition: transform 0.3s; } .gallery-container img:hover { transform: scale(1.1); } #resume { text-align: center; padding: 60px 20px; background: #f9f9f9; } .resume-text { margin-bottom: 20px; color: #444; } .resume-btn { display: inline-block; padding: 14px 30px; background: linear-gradient(120deg, #6a11cb, #2575fc); color: white; text-decoration: none; font-weight: bold; border-radius: 30px; transition: transform 0.3s, box-shadow 0.3s; } .resume-btn:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); } /* ===== CONTACT ===== */ #contact { background: #aef3f5; text-align: center; padding: 40px 20px; /* reduced padding */ } #contact h2 { margin-bottom: 15px; /* reduce gap below heading */ } #contact p { margin-top: 5px; /* reduce gap above email */ }
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: 
+  border-box;
+  font-family: 
+  Arial, sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+}
+/* ===== HEADER ===== */
+header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+header nav a:hover {
+  color: #549ce9;
+}
+/* ===== HERO ===== */
+.hero {
+  height: 90vh;
+  background: linear-gradient(120deg, #6a11cb, #d0f16b);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: 18px;
+}
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+.animate {
+  animation: fadeUp 1s ease forwards;
+}
+.delay {
+  animation-delay: 0.5s;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ===== SECTIONS ===== */
+section {
+  padding: 60px 80px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.about-wrapper {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+.about-text {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+/* cards layout */
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+/* card design */
+.about-card {
+  background: hsl(179, 73%, 75%);
+  padding: 25px;
+  width: 220px;
+  border-radius: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* subtle hover only */
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+.about-card span {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+}
+.about-card h4 {
+  margin-bottom: 6px;
+}
+/* ===== SKILLS ===== */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  padding: 20px 30px;
+  background: hsl(179, 73%, 75%);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+/* ===== HOBBIES SECTION ===== */
+#hobbies {
+  padding: 60px 20px;
+  background: #0b0f19;
+  text-align: center;
+}
+#hobbies h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+.hobbies-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.hobby-card {
+  background: #111827;
+  border-radius: 12px;
+  padding: 25px;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hobby-card span {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+.hobby-card h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.hobby-card p {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+.hobby-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+/* ===== GALLERY ===== */
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.gallery-container img {
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.gallery-container img:hover {
+  transform: scale(1.1);
+}
+#resume {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+.resume-text {
+  margin-bottom: 20px;
+  color: #444;
+}
+.resume-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: linear-gradient(120deg, #6a11cb, #2575fc);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.resume-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+/* ===== CONTACT ===== */
+#contact {
+  background: #aef3f5;
+  text-align: center;
+  padding: 40px 20px;
+  /* reduced padding */
+}
+#contact h2 {
+  margin-bottom: 15px;
+  /* reduce gap below heading */
+}
+#contact p {
+  margin-top: 5px;
+  /* reduce gap above email */
+}
+
 
 
 
