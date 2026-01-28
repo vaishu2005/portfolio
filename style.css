@@ -159,6 +159,55 @@ h2 {
 .card:hover {
   transform: scale(1.1);
 }
+/* ===== HOBBIES SECTION ===== */
+#hobbies {
+  padding: 60px 20px;
+  background: #0b0f19;
+  text-align: center;
+}
+
+#hobbies h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.hobbies-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.hobby-card {
+  background: #111827;
+  border-radius: 12px;
+  padding: 25px;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-card span {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hobby-card h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.hobby-card p {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.hobby-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
 
 /* ===== GALLERY ===== */
 .gallery-container {
@@ -218,3 +267,4 @@ h2 {
 #contact p {
   margin-top: 5px;     /* reduce gap above email */
 }
+
